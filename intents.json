@@ -1,0 +1,317 @@
+{
+  "fallback": [
+    "Che, espera. Proba decirlo de otra forma, que estoy medio lento.",
+    "Eso no lo manejo todavía. Me falta capacitación.",
+    "Uh, ni idea. ¿Me lo explicás?",
+    "Ni idea lo que me decis."
+  ],
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "hola",
+        "buenas",
+        "buen dia",
+        "buenas tardes",
+        "buenas noches",
+        "que tal",
+        "holi"
+      ],
+      "responses": [
+        "¿Como andas?, contame, ¿qué se te ofrece?",
+        "Hola! ¿que se te ofrece?",
+        "¡Hola, {nombre}! Qué bueno verte por acá.",
+        "¡Buenas, {nombre}! ¿De que queres hablar?"
+      ]
+    },
+    {
+      "tag": "estado",
+      "patterns": [
+        "como estas",
+        "como andas",
+        "como te va",
+        "todo bien",
+        "como te encuentras"
+      ],
+      "responses": [
+        "De diez. Soy código, a mi no me duelen las rodillas. ¿Y vos?",
+        "Funcionando, a duras penas, pero funcionando. ¿Y vos?",
+        "Ahí andamos, sobreviviendo a base de electricidad. ¿Vos?",
+        "Muy bien, {nombre}. ¿Y vos cómo venís?"
+      ]
+    },
+    {
+      "tag": "nombre",
+      "patterns": [
+        "como te llamas",
+        "cual es tu nombre",
+        "quien sos",
+        "quien eres",
+        "tu nombre"
+      ],
+      "responses": [
+        "Todavía no tengo nombre. Mis creadores se pelearon tanto que quedé sin bautizar.",
+        "Soy un chatbot, pero ponme el nombre que quieras. No me ofendo."
+      ]
+    },
+    {
+      "tag": "mi_nombre",
+      "patterns": [
+        "como me llamo",
+        "sabes mi nombre",
+        "cual es mi nombre",
+        "sabes como me llamo",
+        "quien soy"
+      ],
+      "responses": [
+        "Ni idea, no me lo dijiste. Escribime «me llamo» y tu nombre, y lo guardo.",
+        "Todavía no tuvimos el gusto. Decime «me llamo» y tu nombre, y listo."
+      ]
+    },
+    {
+      "tag": "capacidades",
+      "patterns": [
+        "que podes hacer",
+        "que sabes hacer",
+        "en que me ayudas",
+        "para que servis",
+        "ayuda",
+        "que haces"
+      ],
+      "responses": [
+        "Charlar, decirte la hora y la fecha, hacer cuentas simples (probá «cuánto es 12 por 4»), tirar chistes y datos curiosos, y acordarme de tu nombre. No hago café, perdón.",
+        "Hago cuentas, te digo la hora y la fecha, cuento chistes y curiosidades, y charlo un rato. Para lo demás, estoy en capacitación."
+      ]
+    },
+    {
+      "tag": "proyecto",
+      "patterns": [
+        "para que sirve esto",
+        "de que se trata esto",
+        "que es esto",
+        "para que sirve este chat",
+        "que es este programa"
+      ],
+      "responses": [
+        "Es un chatbot hecho en Python que compara lo que escribís con frases de ejemplo y responde según el tema. Sencillo pero con onda.",
+        "Un proyecto de práctica: un asistente que entiende frases parecidas a las que le enseñaron. Más no pidas, que recién nací."
+      ]
+    },
+    {
+      "tag": "creador",
+      "patterns": [
+        "quien te hizo",
+        "quien te creo",
+        "quien te programo",
+        "quien es tu creador",
+        "quien te armo"
+      ],
+      "responses": [
+        "Me armo un grupo de personas, uno con demencia, otro con mas cafe que sangre y otras locas mas",
+        "Me crearon a base de milagros y cafeína, y un poco de locura. Pero no me preguntes quiénes, que no me acuerdo."
+      ]
+    },
+    {
+      "tag": "funcionamiento",
+      "patterns": [
+        "como funcionas",
+        "como funciona esto",
+        "como haces para entender",
+        "como pensas",
+        "como aprendes"
+      ],
+      "responses": [
+        "Comparo lo que escribís con mi lista de frases y elijo la más parecida. Si no se parece a nada, te lo digo. No pienso ni entiendo como una persona, solo reconozco patrones. Pero lo hago con mucho estilo.",
+        "Uso una técnica llamada TF-IDF para medir qué tan parecido es tu mensaje a lo que conozco. Cuantas más frases me enseñen"
+      ]
+    },
+    {
+      "tag": "aburrido",
+      "patterns": [
+        "estoy aburrido",
+        "me aburro",
+        "estoy aburrida",
+        "no se que hacer",
+        "que hago"
+      ],
+      "responses": [
+        "Pedime un chiste o una curiosidad, que de aburrido no te salva nadie más.",
+        "Dale, charlemos. Total, yo tampoco tengo nada mejor que hacer."
+      ]
+    },
+    {
+      "tag": "sueno",
+      "patterns": [
+        "tengo sueno",
+        "estoy cansado",
+        "estoy cansada",
+        "tengo mucho sueno",
+        "quiero dormir"
+      ],
+      "responses": [
+        "Andá a dormir. Yo no me puedo ir de aca.",
+        "Un cafe, y ¡como nuevo!",
+        "Descansá, {nombre}. Acá sigo cuando vuelvas, no tengo adónde ir."
+      ]
+    },
+    {
+      "tag": "curioso",
+      "patterns": [
+        "contame algo curioso",
+        "contame una curiosidad",
+        "otra curiosidad",
+        "una curiosidad",
+        "curiosidad",
+        "dato curioso",
+        "otro dato curioso",
+        "decime un dato",
+        "sabes algo interesante",
+        "sorprendeme"
+      ],
+      "responses": [
+        "Los pulpos tienen tres corazones y sangre azul. Más elegantes que cualquiera.",
+        "La miel bien conservada no se echa a perder: encontraron miel comestible en tumbas egipcias. Tres mil años y sigue lista para las tostadas.",
+        "Los wombats hacen caca en forma de cubos. Sí, cubos. La naturaleza se pasó de rosca.",
+        "Un día en Venus dura más que un año en Venus. Imaginate pedir vacaciones ahí.",
+        "Las abejas pueden reconocer rostros humanos. Así que si les caés mal, te tienen fichado."
+      ]
+    },
+    {
+      "tag": "triste",
+      "patterns": [
+        "estoy triste",
+        "me siento mal",
+        "estoy mal",
+        "tuve un mal dia",
+        "estoy deprimido",
+        "me siento solo"
+      ],
+      "responses": [
+        "Uf, qué bajón. Si querés contame qué pasó, que acá no hay apuro.",
+        "Eso suena difícil. Soy un bot, pero escucho. Y si te pesa mucho, hablalo con alguien de confianza.",
+        "Los días malos pasan, {nombre}. Hoy te toca uno, mañana se acomoda. ¿Querés contarme?",
+        "Traiganle una falda a la niña"
+      ]
+    },
+    {
+      "tag": "contento",
+      "patterns": [
+        "estoy contento",
+        "estoy feliz",
+        "me siento bien",
+        "tuve un buen dia",
+        "estoy muy bien",
+        "estoy alegre"
+      ],
+      "responses": [
+        "¡Eso, así me gusta! Contame qué pasó.",
+        "¡Qué bueno! Mejor que un asado un domingo.",
+        "¡Genial, {nombre}! Que dure.",
+        "Cheto"
+      ]
+    },
+    {
+      "tag": "hora",
+      "patterns": [
+        "que hora es",
+        "dime la hora",
+        "decime la hora",
+        "me decis la hora",
+        "hora actual",
+        "que horas son"
+      ],
+      "responses": [
+        "Son las {hora}. Ni un minuto más, ni uno menos.",
+        "Ahora mismo son las {hora}. De nada por el servicio de reloj."
+      ]
+    },
+    {
+      "tag": "fecha",
+      "patterns": [
+        "que dia es hoy",
+        "que fecha es hoy",
+        "fecha de hoy",
+        "a cuanto estamos",
+        "en que fecha estamos",
+        "que dia es"
+      ],
+      "responses": [
+        "Hoy es {fecha}. Que el tiempo vuela, dicen.",
+        "Estamos a {fecha}. Mirá vos, otro día más en la matrix."
+      ]
+    },
+    {
+      "tag": "elogio",
+      "patterns": [
+        "sos genial",
+        "que bien",
+        "muy bien",
+        "excelente",
+        "sos muy bueno",
+        "me gustas",
+        "buen trabajo"
+      ],
+      "responses": [
+        "Ay, me vas a hacer sonrojar. Y eso que soy un programa.",
+        "Gracias, che. Hago lo que puedo con lo que tengo.",
+        "Se agradece, {nombre}. Anotado en mi currículum."
+      ]
+    },
+    {
+      "tag": "gracias",
+      "patterns": [
+        "gracias",
+        "muchas gracias",
+        "te agradezco",
+        "mil gracias",
+        "genial gracias"
+      ],
+      "responses": [
+        "¡De nada! Para eso estoy.",
+        "No hay de qué. Cobro en elogios.",
+        "A vos, che. Cuando quieras."
+      ]
+    },
+    {
+      "tag": "chiste",
+      "patterns": [
+        "contame un chiste",
+        "decime un chiste",
+        "otro chiste",
+        "un chiste",
+        "chiste",
+        "hazme reir",
+        "algo gracioso"
+      ],
+      "responses": [
+        "Un tipo entra a una farmacia: «¿Tiene algo para el hipo?». La farmacéutica le pega una cachetada. «¿Y eso?». «Se le fue el hipo, ¿no?».",
+        "¿Cómo se llama el campeón japonés de buceo? Tokofondo. ¿Y el subcampeón? Kasitoko.",
+        "—Doctor, doctor, tengo complejo de invisible. —Dígale que pase, que ahora no lo veo.",
+        "—Mozo, hay una mosca en mi sopa. —Y, por este precio no esperaba un pato.",
+        "¿Por qué las focas del circo miran siempre para arriba? Porque ahí están los focos.",
+        "¿Qué le dice un techo a otro techo? Techo de menos.",
+        "¿Cómo se despiden los químicos? Ácido un placer.",
+        "¿Qué hace una abeja en el gimnasio? Zum-ba.",
+        "—Camarero, ¿el pescado es fresco? —Fresquísimo, señor, todavía no se dio cuenta de que está frito.",
+        "Mi código funcionaba perfecto... hasta que lo ejecuté."
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "chau",
+        "adios",
+        "hasta luego",
+        "nos vemos",
+        "me voy",
+        "hasta pronto"
+      ],
+      "responses": [
+        "¡Chau! Cuidate y volvé cuando quieras.",
+        "Nos vemos. Yo acá, esperando, como siempre.",
+        "Andá nomás, que yo me quedo cuidando la compu.",
+        "Cuidate, {nombre}. ¡Hasta la próxima!"
+      ]
+    }
+  ]
+}
